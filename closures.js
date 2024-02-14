@@ -1,3 +1,4 @@
+//var
 function outerFunction() {
     var outerVariable = 'Biến ở ngoài';
 
@@ -11,14 +12,13 @@ function outerFunction() {
 var myFunction = outerFunction(); // Gán innerFunction (cùng với closure) vào myFunction
 myFunction(); // Gọi myFunction để in ra giá trị của outerVariable từ closure
 
+//let
+// function printNumbers() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//     }
+//     console.log(i); // Lỗi: i không tồn tại ở đây vì i chỉ có phạm vi trong vòng lặp
+// }
 
+// printNumbers();
 
-//example
-function createCounter() {
-    var counter = 0;
-    var myFunction = function () {
-        counter = counter + 1;
-        return counter;
-    }
-    return myFunction;
-}
